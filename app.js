@@ -38,7 +38,7 @@ switch (currentDay) {
 
 // Task 2:
 
-for (let i = 0; i < 101; i++) {
+for (let i = 0; i < 100; i++) {
     console.log("Task 2: " + i);
 }
 
@@ -71,3 +71,42 @@ for (let i = 0; i < 1000; i++){
     numArray.push(i * i);
     console.log(numArray);
 }
+
+
+// Task 6(attempt):
+
+const num_Array = [10, 9, 9, 8, 8, 11, 8, 0, 9, 1];
+
+let firstBiggest = numArray[0];
+let secondBiggest = numArray[0];
+for (let i = 0; i < numArray.length; i++){
+    if (numArray[i] > firstBiggest){
+        secondBiggest = firstBiggest;
+        firstBiggest = numArray[i];
+    }
+    else if (numArray[i] > secondBiggest && numArray[i] != firstBiggest){
+        secondBiggest = numArray[i];
+    }
+}
+
+console.log(secondBiggest);
+
+
+
+
+const testArray = [2, 3, 6, 6, 5];
+// Must get second biggest number
+// Answer must be 5
+// let firstBiggest = testArray[0];
+// let secondBiggest = testArray[0];
+// for (let i = 0; i < testArray.length; i++){
+//     if (testArray[i] > firstBiggest){
+//         secondBiggest = firstBiggest;
+//         firstBiggest = testArray[i];
+//     }
+//     else if (testArray[i] > secondBiggest && testArray[i] != firstBiggest){
+//         secondBiggest = testArray[i];
+//     }
+// }
+
+// console.log(secondBiggest);
