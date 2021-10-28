@@ -55,22 +55,23 @@ while (i < 50) {
 
 // Task 4:
 
-let index = 0;
+i = 0;
 
 do {
-    index++;
-    console.log("Task 4: " + index);
-} while (index > 150);
+    i++;
+    console.log("Task 4: " + i);
+} while (i < 150);
 
 
 // Task 5:
 
 const numArray = [];
 
-for (let i = 0; i < 1000; i++){
+for (let i = 0; i < 10000; i++){
     numArray.push(i * i);
-    console.log(numArray);
 }
+
+console.log(numArray);
 
 
 // Task 6(attempt):
